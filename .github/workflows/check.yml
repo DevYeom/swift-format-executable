@@ -1,0 +1,17 @@
+name: Check
+
+on: 
+  push:
+    branches: 
+      - main
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the swift-format version
+        run: make check
