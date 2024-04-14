@@ -1,5 +1,7 @@
 # swift-format-executable
 
+[![Check](https://github.com/DevYeom/swift-format-executable/actions/workflows/check.yml/badge.svg)](https://github.com/DevYeom/swift-format-executable/actions/workflows/check.yml)
+
 The `swift-format-executable` repository provides a pre-built executable binary for [apple/swift-format](https://github.com/apple/swift-format) tool. This repository allows you to easily download and use `swift-format` in your CI/CD environments without the need to build it every time.
 
 ## Usage
