@@ -30,8 +30,10 @@ rm -rf swift-format
 git clone https://github.com/apple/swift-format.git
 cd swift-format
 git switch --detach "tags/$SWIFT_FORMAT_VERSION"
-swift build -c release
+swift build -c release --arch arm64
+swift build -c release --arch x86_64
 cd $SCRIPT_DIR
-cp swift-format/.build/release/swift-format ./swift-format-$SWIFT_FORMAT_VERSION
+cp swift-format/.build/arm64-apple-macosx/release/swift-format ./swift-format-$SWIFT_FORMAT_VERSION-arm64
+cp swift-format/.build/x86_64-apple-macosx/release/swift-format ./swift-format-$SWIFT_FORMAT_VERSION-x86_64
 rm -rf swift-format
 __success "swift-format is installed."

@@ -20,6 +20,12 @@ To download a specific version of the `swift-format` binary, specify the version
 curl -LO https://github.com/DevYeom/swift-format-executable/releases/download/510.1.0/swift-format.zip
 ```
 
+If you're running in `x86_64` environment, you can use the following URL.
+
+```
+curl -LO https://github.com/DevYeom/swift-format-executable/releases/download/510.1.0/swift-format-x86_64.zip
+```
+
 ### Grant Execution Permission
 
 After downloading, give execution permission to the binary:
